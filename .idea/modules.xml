@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TTPSolver.iml" filepath="$PROJECT_DIR$/TTPSolver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TTPSolver.iml" filepath="$PROJECT_DIR$/TTPSolver.iml" group="TTPSolver" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TTPSolver_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TTPSolver_main.iml" group="TTPSolver" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TTPSolver_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TTPSolver_test.iml" group="TTPSolver" />
     </modules>
   </component>
 </project>
