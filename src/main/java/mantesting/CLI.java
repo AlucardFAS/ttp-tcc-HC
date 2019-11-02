@@ -25,7 +25,7 @@ public class CLI {
   public static void main(String[] args) {
 
     if (args.length < 2) {
-      args = new String[]{"eil76_n75_bounded-strongly-corr_01.ttp", "cs2sa"};
+      args = new String[]{"a280_n279_bounded-strongly-corr_01.ttp", "cs2sa"};
     }
 
     String[] spl = args[0].split("_",2);
@@ -159,10 +159,13 @@ public class CLI {
     // save solution in a file
     try {
       String currentTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+      File file = new File("./output/solutions/"+inst+"-"+algoName+"-"+currentTime+".txt");
+      if (!file.exists()) file.createNewFile();
       PrintWriter pw = new PrintWriter("./output/solutions/"+inst+"-"+algoName+"-"+currentTime+".txt");
       pw.println(ttprun.sx);
       pw.close();
-    } catch (FileNotFoundException e) {
+    }
+    catch (IOException e) {
       e.printStackTrace();
     }
 
